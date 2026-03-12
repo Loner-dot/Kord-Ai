@@ -39,7 +39,7 @@ cmd: 'ping',
     const msg = await m.send("```pinging...```");
     const end = performance.now();
     const ping = Math.round(end - start);
-    msg.edit(`々 Pong! ${ping}ms..`);
+    msg.edit(`々✞REMEX✞ Pong! ${ping}ms..`);
   } catch (e) {
     console.log("cmd error", e)
     return await m.sendErr(e)
@@ -159,7 +159,7 @@ cmd: 'uptime',
 }, async (m, text) => {
   try {
     var uptime = await secondsToHms(process.uptime())
-    return m.send(`uptime: ${uptime}`)
+    return m.send(`✞REMEX✞ uptime: ${uptime}`)
   } catch (e) {
     console.log("cmd error", e)
     return await m.sendErr(e)
@@ -279,7 +279,7 @@ kord({
     msg += `╠ 📅 Time: ${currentTime}\n`;
     msg += `╠ 🚀 Node: ${process.version}\n`;
     msg += `╠ 💻 Platform: ${process.platform}\n`;
-    msg += "╠\n╠ ✨ Bot is running smoothly!\n";
+    msg += "╠\n╠ ✨ ✞REMEX✞ is running smoothly!\n";
     msg += "╚════════════════════════```";
 
     return await m.client.sendMessage(m.chat, {
@@ -554,7 +554,7 @@ cmd: "repo|sc|script",
   try {
     const msg =
     `╔═════《 My Repository 》═════╗
-╠ Link: https://github.com/M3264/Kord-Ai
+╠ Link: https://github.com/Loner-dot/Kord-Ai
 ╠ Description: WhatsApp Bot built with Baileys
 ╚═════════════════════════════╝`
     
